@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Countries API</title>
+    
+</head>
+<body>
+    <h1>Rest Countries API</h1>
+    <div id='input-container'>
+        <label for='country'>Enter Country Name</label>
+        <input type="text" id='country-name' name='country' onFocus="this.value = ''" required/>
+        <button type="button" id='btnFetchCountry'>Submit</button>
+    </div>
+    <div id="data-container">
+        <p >Capital: <span id='capital'></span>
+        <p id='neighborCapitalList'>Neighbor Capital: <ul id="neighborCapital"></ul></p></p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
