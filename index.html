@@ -5,19 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rest Countries API</title>
-    
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <h1>Rest Countries API</h1>
+    <div id='main-container'>
+    <h1>Search Country's Capital</h1>
     <div id='input-container'>
-        <label for='country'>Enter Country Name</label>
-        <input type="text" id='country-name' name='country' onFocus="this.value = ''" required/>
-        <button type="button" id='btnFetchCountry'>Submit</button>
+        <input type="text" id='country-name' name='country' placeholder="Enter Country name.." onFocus="this.value = ''" required/>
+        <button type="button" id='btnFetchCountry' class='btn'>Submit</button>
     </div>
     <div id="data-container">
-        <p >Capital: <span id='capital'></span>
-        <p id='neighborCapitalList'>Neighbor Capital: <ul id="neighborCapital"></ul></p></p>
+        <p>Country: </h5> <span id='country'></span></p>
+        <p>Capital: </h5> <span id='capital'></span></p>
+        <p id='neighborCapitalList'>Neighbor Capitals: <ul id="neighborCapital"></ul></p>
     </div>
+</div>
     <script src="./main.js"></script>
 </body>
 </html>

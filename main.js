@@ -80,9 +80,11 @@
       }
   
       render() {
+        const countryNode = document.querySelector('#country');
         const capitalNode = document.querySelector("#capital");
         const neighborCapitalList = document.querySelector("#neighborCapital");
-  
+        
+        countryNode.innerText = (this.#country) ? this.#country.name : '';
         capitalNode.innerText = this.getCapital();
   
         if (neighborCapitalList.children.length > 0) {
@@ -113,7 +115,7 @@
     function updateUI() {
       const countryEl = document.querySelector("#country-name");
       const countryName = countryEl.value;
-  
+      
       country.init(countryName);
     }
   })();
